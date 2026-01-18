@@ -2,8 +2,8 @@
 export type Suite = "hearts" | "spades" | "diamonds" | "clubs";
 // Enum type declaration for different ranks
 export type Rank =
-  | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "J"
-  | "Q" | "K" | "A";
+  | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "J" | "Q" | "K"
+  | "A";
 
 // Assigns integer values to each rank
 export const valueCards = {
