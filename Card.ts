@@ -37,7 +37,7 @@ export class Card {
     this.rank = rank;
     this.suite = suite;
     this.value = valueCards[rank];
-    this.unicode = `${symbolUnicodes[this.suite]}${rank}`
+    this.unicode = `${rank}${symbolUnicodes[this.suite]}`
   }
 
   // Not sure if we'll need it for blackjack

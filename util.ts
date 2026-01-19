@@ -9,3 +9,19 @@ export function shuffleArray(array: Card[]) {
   }
   return array;
 }
+
+export function displayHandAndTotal(
+  hand: Card[],
+  total: number
+) {
+  let showHand = ''
+  for (let i=0; i<hand.length;i++) {
+    if (i === hand.length-1) {
+      showHand += hand[i]?.unicode;
+    } else {
+      showHand += hand[i]?.unicode  + ', ';
+    }
+    total += hand[i]?.value!;
+  }
+  console.log(`Your Hand: ${showHand} (Total: ${total})`) 
+}
